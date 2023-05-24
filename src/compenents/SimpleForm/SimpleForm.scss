@@ -1,0 +1,45 @@
+.input-field-wrapper {
+    width: 250px;
+
+    input {
+        width: 100%;
+        padding: 5px;
+        border: 2px solid blue;
+        outline: none;
+        animation: none;
+
+        &.invalid {
+            border-color: red;
+            animation: vibrate 0.2s 3;
+        }
+    }
+}
+
+@keyframes vibrate {
+    25% {
+        translate: 6px 0;
+    }
+    50% {
+        translate: -6px 0;
+    }
+    75% {
+        translate: 6px 0;
+    }
+}
+
+.submit-button-wrapper {
+    margin-top: 20px;
+    button {
+        appearance: none;
+        background-color: #1b2978;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            background-color: #2a3fb7;
+        }
+    }
+}
